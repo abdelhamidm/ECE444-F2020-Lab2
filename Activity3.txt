@@ -1,0 +1,9 @@
+In order for view functions to be able to access the request object without passing the object 
+as an argument, global contexts are used. Global request contexts enable the request object to be used
+as if it was a global variable when in reality it is not a global variable. Instead, Flask makes 
+the request object globally available to a thread without affecting the other threads. Flask also 
+supports application contexts. Global application contexts provide a mechanism by which an 
+application can temporarily store data while it handles a request. 
+
+In order to access application and request global contexts, these contexts need to be pushed 
+otherwise an error is generated. 
