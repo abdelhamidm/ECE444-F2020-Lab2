@@ -1,2 +1,4 @@
 # ECE444-F2020-Lab2
-Repo to hold Lab 2 exercises
+Mohamed Abdelhamid
+This repo is a clone of: https://github.com/miguelgrinberg/flasky
+
