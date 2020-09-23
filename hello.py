@@ -8,6 +8,12 @@ app = Flask(__name__)
 def index():
     return '<h1>Hello World! </h1>'
 
+#Decorator
+@app.route('/user/<name>')
+#define another function to dynamically display the user's name
+def user(name):
+    return '<h1>Hello, %s</h1>' % name
+
 #run the server to service web requests
 if __name__ == '__main__':
     app.run(debug=True)
